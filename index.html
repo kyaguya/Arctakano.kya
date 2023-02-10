@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Arctakano's Card ✦</title>
+</head>
+<body>
+  <div class="card">
+    <div class="user">
+      <div class="imgbox">
+        <img src="pp.png">
+      </div>
+      <div class="content">
+        <h2>Arctakano<br><span>orang biasa yang kebetulan lewat</span></h2>
+      </div>
+      <span class="toggle"></span>
+    </div>
+    <ul class="contact">
+      <li style="--clr:#fc8200;--i:0">
+        <a href="https://www.instagram.com/arctakano_/">
+          <div class="iconbox"><i class="fa-brands fa-instagram"></i></div>
+          <p>instagram</p>
+        </a>
+      </li>
+      <li style="--clr:#171515;--i:1">
+        <a href="https://github.com/kyaguya">
+          <div class="iconbox"><i class="fa-brands fa-github"></i></div>
+          <p>github</p>
+        </a>
+      </li>
+      <li style="--clr:#374F54;--i:2">
+        <a href="#">
+          <div class="iconbox"><i class="fa-brands fa-discord"></i></div>
+          <p>Kyaguya#5770</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <script>
+    let toggle = document.querySelector('.toggle');
+    let card = document.querySelector('.card');
+    toggle.onclick = function(){
+      card.classList.toggle('active')
+    }
+  </script>
+</body>
+</html>
